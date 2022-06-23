@@ -1,0 +1,107 @@
+name: flutter_citadel
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.3 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+  # BSD
+  intl: 0.17.0
+
+  # Network
+  # MIT
+  dio: 4.0.6
+  # MIT
+  pretty_dio_logger: 1.2.0-beta-1
+  # MIT
+  worker_manager: 4.2.6
+  # MIT
+  isolated_worker: 0.1.0
+  # BSD
+  connectivity_plus: 2.3.0
+
+  # Local storage
+  # Apache 2.0
+  hive_flutter: 1.1.0
+  # BSD-2-Clause
+  flutter_secure_storage: 5.0.2
+
+  # UI
+  # MIT
+  flutter_svg: 1.0.3
+  # MIT
+  dotted_border: ^2.0.0+2
+  # MIT
+  step_progress_indicator: 1.0.2
+
+  # Firebase
+  firebase_core: 1.14.1
+  # BSD
+  # todo starter: FCM background messages on iOS need additional setup with apple developer account
+  firebase_messaging: 11.2.13
+  # BSD
+  firebase_crashlytics: 2.6.2
+  # BSD
+  firebase_analytics: 9.1.5
+  # BSD
+  flutter_local_notifications: 9.4.0
+
+  # Other
+  # BSD
+  share_plus: 4.0.4
+  # BSD
+  package_info: 2.0.2
+  # BSD
+  synchronized: 3.0.0+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  # Apache 2.0
+  hive_generator: 1.1.2
+  # BSD
+  build_runner: 2.1.9
+  # MIT
+  dart_code_metrics: 4.14.0
+  #BSD-3-Clause
+  golden_toolkit: 0.13.0
+  # MIT
+  mocktail: 0.3.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/images/classic
+    - assets/images/classic/buildings
+    - assets/images/classic/herouse
+    - assets/images/delux/
+    - assets/images/delux/buildings
+    - assets/images/delux/herouse
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+
