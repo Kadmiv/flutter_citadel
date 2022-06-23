@@ -1,19 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_citadel/generated/l10n.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Game',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const BasePage(),
-    );
-  }
-}
 
 class BasePage extends StatefulWidget {
   const BasePage({super.key});

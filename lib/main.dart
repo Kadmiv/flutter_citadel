@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_citadel/ui/pages/base_page.dart';
+
+import 'package:flutter_citadel/app.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const App());
 }

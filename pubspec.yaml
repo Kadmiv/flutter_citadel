@@ -63,6 +63,8 @@ dependencies:
   # BSD
   package_info: 2.0.2
   # BSD
+  rxdart: ^0.27.4
+  # BSD
   synchronized: 3.0.0+2
 
 dev_dependencies:
@@ -79,6 +81,16 @@ dev_dependencies:
   golden_toolkit: 0.13.0
   # MIT
   mocktail: 0.3.0
+
+  # MIT
+  device_preview: 1.0.0
+  # Extensions
+  # Apache 2.0
+  dartx: 1.1.0
+
+flutter_intl:
+  enabled: true
+  main_locale: en_US
 
 flutter:
   uses-material-design: true
