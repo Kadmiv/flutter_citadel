@@ -2,7 +2,7 @@
 //todo - kadmiv - нужно прописать логику роботы колоды как стека - отдельный класс
 import 'package:flutter_citadel/repository/services/shuffler.dart';
 
-class GameStepsWatcher extends IGameStepsWatcher {
+class GameStepsWatcher extends IGameStepsWatcher  with Shuffler {
   @override
   Future<void> starGameCircle() async {
     // что нужно будет проходиться по всем игрокам и его героям  - Player.heroCard
@@ -27,7 +27,7 @@ class GameStepsWatcher extends IGameStepsWatcher {
   }
 }
 
-abstract class IGameStepsWatcher  with Shuffler {
+abstract class IGameStepsWatcher {
   // прохидися по всем рангам и проверяем каждого играком у кого есть герой нужного ранга
   Future<void> starGameCircle();
 
