@@ -5,6 +5,24 @@ class GameStepsWatcher extends IGameStepsWatcher {
   Future<void> starGameCircle() async {
     // что нужно будет проходиться по всем игрокам и его героям  - Player.heroCard
   }
+
+  @override
+  Future<void> buildDistrict() {
+    // TODO: implement buildDistrict
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> playerStepDecision() {
+    // TODO: implement playerStepDecision
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<void> useForce() {
+    // TODO: implement useForce
+    throw UnimplementedError();
+  }
 }
 
 abstract class IGameStepsWatcher {

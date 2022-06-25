@@ -1,7 +1,9 @@
 import 'package:flutter_citadel/repository/models/hero_card.dart';
-import 'package:flutter_citadel/repository/services/shuffler.dart';
 
 class GamePreparer implements IGamePreparer {
+  @override
+  List<HeroCard> heroesCards = [];
+
   @override
   Future<void> prepareGame() {
     // TODO: implement prepareGame
@@ -33,7 +35,7 @@ class GamePreparer implements IGamePreparer {
   }
 }
 
-abstract class IGamePreparer with Shuffler {
+abstract class IGamePreparer {
   List<HeroCard> heroesCards = [];
 
   /// Подготовка к основной игре

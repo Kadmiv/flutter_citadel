@@ -13,6 +13,12 @@ class GameStepsWatcher extends IHeroStepSelector{
     throw UnimplementedError();
   }
 
+  @override
+  Future<void> heroSelection() {
+    // TODO: implement heroSelection
+    throw UnimplementedError();
+  }
+
 
 }
 
