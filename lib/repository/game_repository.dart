@@ -1,11 +1,15 @@
-class GameRepository{
+import 'package:flutter_citadel/repository/models/player.dart';
+import 'package:flutter_citadel/repository/services/game_preparer.dart';
 
-  /// Подготовка к основной игре
-  // Прежде, чем игра начнется, удалите все дополнительные карты персонажей из игры.
-  // Перетасуйте восемь оставшихся карт персонажей и поместите их в одну колоду. Эта колода называется колодой персонажей.
-  // Перетасуйте карты районов и сложите вместе в другую колоду. Эта колода называется колодой районов.
-  // Раздайте каждому игроку по четыре карты районов.
-  // Каждый игрок получает два золота из банка.
-  // Самый старший игрок получает корону.
-  
+class GameRepository extends IGameRepository {}
+
+class IGameRepository  with GamePreparer  {
+  List<Player> players = [];
+  late final IGamePreparer gamePreparer;
+
+  // В зависимости от того
+  void prepareGame ();
 }
+
+
+

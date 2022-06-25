@@ -1,5 +1,5 @@
 enum HeroType {
-  none,
+  //todo - kadmiv - поменять порядок как на совновной карте
   architect,
   assassin,
   bishop,
