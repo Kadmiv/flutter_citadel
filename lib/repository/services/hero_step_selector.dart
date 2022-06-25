@@ -1,6 +1,6 @@
 
 
-class GameStepsWatcher extends IHeroStepSelector{
+class HeroStepSelector extends IHeroStepSelector{
   @override
   Future<void> startSelection() {
     // TODO: implement starGame

@@ -1,5 +1,7 @@
 //todo - kadmiv - у этого класса есть доступ к колоде квартало
 //todo - kadmiv - нужно прописать логику роботы колоды как стека - отдельный класс
+import 'package:flutter_citadel/repository/services/shuffler.dart';
+
 class GameStepsWatcher extends IGameStepsWatcher {
   @override
   Future<void> starGameCircle() async {
@@ -25,7 +27,7 @@ class GameStepsWatcher extends IGameStepsWatcher {
   }
 }
 
-abstract class IGameStepsWatcher {
+abstract class IGameStepsWatcher  with Shuffler {
   // прохидися по всем рангам и проверяем каждого играком у кого есть герой нужного ранга
   Future<void> starGameCircle();
 
