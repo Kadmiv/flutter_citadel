@@ -97,13 +97,13 @@ flutter:
 
   assets:
     - assets/
-    - assets/images/
-    - assets/images/classic/
-    - assets/images/classic/buildings/
-    - assets/images/classic/herouse/
-    - assets/images/delux/
-    - assets/images/delux/buildings/
-    - assets/images/delux/herouse/
+    - assets/data/
+    - assets/data/classic/
+    - assets/data/classic/buildings/
+    - assets/data/classic/herouse/
+    - assets/data/delux/
+    - assets/data/delux/buildings/
+    - assets/data/delux/herouse/
 
   # fonts:
   #   - family: Schyler

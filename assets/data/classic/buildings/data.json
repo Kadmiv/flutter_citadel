@@ -1,0 +1,170 @@
+[
+  {
+    "type": "battlefield",
+    "price": 3,
+    "additionalPrice": 0,
+    "color": "red"
+  },
+  {
+    "type": "castle",
+    "price": 4,
+    "additionalPrice": 0,
+    "color": "yellow"
+  },
+  {
+    "type": "cathedral",
+    "price": 5,
+    "additionalPrice": 0,
+    "color": "blue"
+  },
+  {
+    "type": "church",
+    "price": 2,
+    "additionalPrice": 0,
+    "color": "blue"
+  },
+  {
+    "type": "docks",
+    "price": 3,
+    "additionalPrice": 0,
+    "color": "green"
+  },
+  {
+    "type": "dragongate",
+    "price": 6,
+    "additionalPrice": 2,
+    "color": "violet"
+  },
+  {
+    "type": "fortress",
+    "price": 5,
+    "additionalPrice": 0,
+    "color": "red"
+  },
+  {
+    "type": "graveyard",
+    "price": 5,
+    "additionalPrice": 0,
+    "color": "violet"
+  },
+  {
+    "type": "greatwall",
+    "price": 6,
+    "additionalPrice": 0,
+    "color": "violet"
+  },
+  {
+    "type": "harbor",
+    "price": 4,
+    "additionalPrice": 0,
+    "color": "green"
+  },
+  {
+    "type": "hauntedcity",
+    "price": 2,
+    "additionalPrice": 0,
+    "color": "violet"
+  },
+  {
+    "type": "keep",
+    "price": 3,
+    "additionalPrice": 0,
+    "color": "violet"
+  },
+  {
+    "type": "laboratory",
+    "price": 5,
+    "additionalPrice": 0,
+    "color": "violet"
+  },
+  {
+    "type": "library",
+    "price": 6,
+    "additionalPrice": 0,
+    "color": "violet"
+  },
+  {
+    "type": "manor",
+    "price": 3,
+    "additionalPrice": 0,
+    "color": "yellow"
+  },
+  {
+    "type": "market",
+    "price": 2,
+    "additionalPrice": 0,
+    "color": "green"
+  },
+  {
+    "type": "monastery",
+    "price": 3,
+    "additionalPrice": 0,
+    "color": "violet"
+  },
+  {
+    "type": "observatory",
+    "price": 5,
+    "additionalPrice": 0,
+    "color": "violet"
+  },
+  {
+    "type": "palace",
+    "price": 5,
+    "additionalPrice": 0,
+    "color": "yellow"
+  },
+  {
+    "type": "prison",
+    "price": 2,
+    "additionalPrice": 0,
+    "color": "red"
+  },
+  {
+    "type": "schoolofmagic",
+    "price": 6,
+    "additionalPrice": 0,
+    "color": "violet"
+  },
+  {
+    "type": "smithy",
+    "price": 5,
+    "additionalPrice": 0,
+    "color": "violet"
+  },
+  {
+    "type": "tavern",
+    "price": 1,
+    "additionalPrice": 0,
+    "color": "green"
+  },
+  {
+    "type": "temple",
+    "price": 1,
+    "additionalPrice": 0,
+    "color": "violet"
+  },
+  {
+    "type": "townhall",
+    "price": 5,
+    "additionalPrice": 0,
+    "color": "green"
+  },
+  {
+    "type": "tradingpost",
+    "price": 2,
+    "additionalPrice": 0,
+    "color": "green"
+  },
+  {
+    "type": "university",
+    "price": 6,
+    "additionalPrice": 2,
+    "color": "violet"
+  },
+  {
+    "type": "watchtower",
+    "price": 1,
+    "additionalPrice": 0,
+    "color": "red"
+  }
+]

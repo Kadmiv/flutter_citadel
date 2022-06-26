@@ -9,6 +9,7 @@ class Assets {
   static const String buildingsCastle = 'assets/images/delux/buildings/castle.jpeg';
   static const String buildingsCathedral = 'assets/images/delux/buildings/cathedral.jpeg';
   static const String buildingsChurch = 'assets/images/delux/buildings/church.jpeg';
+  static const String buildingsData = 'assets/images/classic/buildings/data.json';
   static const String buildingsDocks = 'assets/images/delux/buildings/docks.jpeg';
   static const String buildingsDragongate = 'assets/images/delux/buildings/dragongate.jpeg';
   static const String buildingsFactory = 'assets/images/delux/buildings/factory.jpeg';
@@ -93,6 +94,7 @@ class Assets {
   static const String herouseBishop = 'assets/images/delux/herouse/bishop.jpeg';
   static const String herouseBlackmailer = 'assets/images/delux/herouse/blackmailer.jpeg';
   static const String herouseCardinal = 'assets/images/delux/herouse/cardinal.jpeg';
+  static const String herouseData = 'assets/images/classic/herouse/data.json';
   static const String herouseDiplomat = 'assets/images/delux/herouse/diplomat.jpeg';
   static const String herouseEmperor = 'assets/images/delux/herouse/emperor.jpeg';
   static const String herouseKing = 'assets/images/delux/herouse/king.jpeg';
