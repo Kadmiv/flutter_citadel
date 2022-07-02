@@ -27,7 +27,7 @@ class GameRepository extends IGameRepository {
     var districts = await _dataLoader.loadDistricts();
 
     Player player = Player()
-      ..heroesCards = [herous.first]
+      ..heroesCards = [herous.first,herous.last]
       ..districts = districts
       ..createdDistricts = [districts[1], districts[2]];
 

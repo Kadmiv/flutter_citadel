@@ -6,9 +6,9 @@ import 'package:flutter_citadel/repository/models/hero_card.dart';
 import 'package:flutter_citadel/repository/models/player.dart';
 import 'package:flutter_citadel/ui/pages/base/base_view_model.dart';
 
-class PlayerFieldViewModel extends IPlayerFieldViewModel {
+class AnotherPlayerFieldViewModel extends IAnotherPlayerFieldViewModel {
 
-  PlayerFieldViewModel() {
+  AnotherPlayerFieldViewModel() {
     createdDistrictsController = createController();
     districtsController = createController();
     heroesController = createController();
@@ -27,7 +27,7 @@ class PlayerFieldViewModel extends IPlayerFieldViewModel {
   }
 }
 
-abstract class IPlayerFieldViewModel extends MainViewModel {
+abstract class IAnotherPlayerFieldViewModel extends MainViewModel {
   //
   late StreamController<List<DistrictCard>> createdDistrictsController;
   late StreamController<List<DistrictCard>> districtsController;

@@ -3,15 +3,15 @@ import 'package:flutter_citadel/generated/assets.dart';
 import 'package:flutter_citadel/repository/models/district_card.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
-class CreatedDistrictsBoard extends StatelessWidget {
-  const CreatedDistrictsBoard({required this.districts, super.key});
+class MainPlayerCreatedDistrictsBoard extends StatelessWidget {
+  const MainPlayerCreatedDistrictsBoard({required this.districts, super.key});
 
   final List<DistrictCard> districts;
 
   @override
   Widget build(BuildContext context) {
     return GridView.count(
-      crossAxisCount: 4,
+      crossAxisCount: 8,
       physics: const NeverScrollableScrollPhysics(),
       childAspectRatio: 3 / 4.5,
       children: List.generate(

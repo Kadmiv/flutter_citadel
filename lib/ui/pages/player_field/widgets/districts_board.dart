@@ -19,7 +19,7 @@ class DistrictsBoard extends StatelessWidget {
           style: NeumorphicStyle(
             shape: NeumorphicShape.concave,
             boxShape: NeumorphicBoxShape.roundRect(
-              BorderRadius.circular(12),
+              BorderRadius.circular(8),
             ),
             depth: -8,
             lightSource: LightSource.topLeft,

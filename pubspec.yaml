@@ -46,6 +46,12 @@ dependencies:
   step_progress_indicator: 1.0.2
   # MIT
   flutter_neumorphic: ^3.2.0
+  # MIT
+  flutter_staggered_grid_view: ^0.6.1
+  # MIT
+  multi_split_view: ^2.1.0
+  # MIT
+  flutter_chat_ui: ^1.6.3
 
   # Firebase
   firebase_core: 1.14.1
