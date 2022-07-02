@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_citadel/repository/models/district_card.dart';
 import 'package:flutter_citadel/repository/models/hero_card.dart';
 import 'package:flutter_citadel/ui/pages/base/base_view_model.dart';
+import 'package:flutter_citadel/ui/pages/chat_page/chat_page.dart';
 import 'package:flutter_citadel/ui/pages/player_field/another_player_field/another_player_field_block.dart';
 import 'package:flutter_citadel/ui/pages/player_field/another_player_field/another_player_field_page.dart';
 import 'package:flutter_citadel/ui/pages/player_field/main_player_field/main_player_field_block.dart';
@@ -97,6 +98,7 @@ class _BattleFieldPageState
                   },
                 ),
               ),
+
             ],
           ),
         ),

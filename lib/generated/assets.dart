@@ -2,6 +2,7 @@
 class Assets {
   Assets._();
 
+  static const String assetsMessages = 'assets/messages.json';
   static const String classicDistrictsBattlefield = 'assets/data/classic/districts/battlefield.png';
   static const String classicDistrictsCastle = 'assets/data/classic/districts/castle.png';
   static const String classicDistrictsCathedral = 'assets/data/classic/districts/cathedral.png';

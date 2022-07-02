@@ -53,6 +53,8 @@ dependencies:
   # MIT
   flutter_chat_ui: ^1.6.3
 
+  uuid: ^3.0.6
+
   # Firebase
   firebase_core: 1.14.1
   # BSD
