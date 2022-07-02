@@ -44,6 +44,8 @@ dependencies:
   dotted_border: ^2.0.0+2
   # MIT
   step_progress_indicator: 1.0.2
+  # MIT
+  flutter_neumorphic: ^3.2.0
 
   # Firebase
   firebase_core: 1.14.1
@@ -99,11 +101,11 @@ flutter:
     - assets/
     - assets/data/
     - assets/data/classic/
-    - assets/data/classic/buildings/
-    - assets/data/classic/herouse/
+    - assets/data/classic/districts/
+    - assets/data/classic/heroes/
     - assets/data/delux/
-    - assets/data/delux/buildings/
-    - assets/data/delux/herouse/
+    - assets/data/delux/districts/
+    - assets/data/delux/heroes/
 
   # fonts:
   #   - family: Schyler
