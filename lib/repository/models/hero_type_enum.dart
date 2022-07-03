@@ -18,5 +18,5 @@ HeroType getHeroTypeByName(String name) {
     }
   }
 
-  return HeroType.none;
+  return HeroType.assassin;
 }
