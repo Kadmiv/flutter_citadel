@@ -115,7 +115,8 @@ class Assets {
   static const String heroesWarlord = 'assets/data/delux/heroes/warlord.jpeg';
   static const String heroesWitch = 'assets/data/delux/heroes/witch.jpeg';
   static const String heroesWizard = 'assets/data/delux/heroes/wizard.jpeg';
-  static const String iconsCoin = 'assets/icons/coin.svg';
-  static const String iconsCrow = 'assets/icons/crow.svg';
+  static const String iconsAvatarExample = 'assets/icons/avatar_example.png';
+  static const String iconsCoin = 'assets/icons/coin.png';
+  static const String iconsCrow = 'assets/icons/crow.png';
 
 }

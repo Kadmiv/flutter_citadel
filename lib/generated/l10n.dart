@@ -329,6 +329,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Get cards`
+  String get getCards {
+    return Intl.message(
+      'Get cards',
+      name: 'getCards',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `x {coinsCount}`
+  String playerCoins(Object coinsCount) {
+    return Intl.message(
+      'x $coinsCount',
+      name: 'playerCoins',
+      desc: '',
+      args: [coinsCount],
+    );
+  }
+
+  /// `Get coins`
+  String get getCoins {
+    return Intl.message(
+      'Get coins',
+      name: 'getCoins',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

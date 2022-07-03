@@ -23,13 +23,12 @@ class GameRepository extends IGameRepository {
     anotherPlayersSubject = ReplaySubject();
     currentPlayerSubject = ReplaySubject();
 
-    final herous = await _dataLoader.loadHeroes();
+    final heroes = await _dataLoader.loadHeroes();
     final districts = await _dataLoader.loadDistricts();
 
     final currentPlayer = Player()
       ..goldenCoinCount = 1
-      ..isHaveCrown = true
-      ..heroesCards = [herous[0], herous[0]]
+      ..heroesCards = [heroes[0], heroes[0]]
       ..districts = [districts[1], districts[2]]
       ..createdDistricts = [districts[3], districts[4]];
 
@@ -38,27 +37,33 @@ class GameRepository extends IGameRepository {
     final otherPlayers = [
       Player()
         ..goldenCoinCount = 1
-        ..heroesCards = [herous[1]]
+        ..isHaveCrown = true
+        ..heroesCards = [heroes[1]]
         ..districts = [districts[5], districts[6]]
         ..createdDistricts = [districts[7]],
       Player()
         ..goldenCoinCount = 1
-        ..heroesCards = [herous[2]]
+        ..heroesCards = [heroes[2]]
         ..districts = [districts[8], districts[9]]
         ..createdDistricts = [districts[10]],
       Player()
         ..goldenCoinCount = 11
-        ..heroesCards = [herous[3]]
+        ..heroesCards = [heroes[3]]
         ..districts = [districts[11], districts[12]]
         ..createdDistricts = [districts[13]],
       Player()
         ..goldenCoinCount = 111
-        ..heroesCards = [herous[4]]
+        ..heroesCards = [heroes[4]]
         ..districts = [districts[14], districts[15]]
         ..createdDistricts = [districts[16]],
     ];
 
     anotherPlayersSubject.add(otherPlayers);
+  }
+
+  @override
+  void cardsForSelection() {
+    // TODO: implement cardsForSelection
   }
 }
 
@@ -72,4 +77,6 @@ abstract class IGameRepository {
   late final IDataLoader _dataLoader;
 
   Future<void> init();
+
+ void cardsForSelection();
 }

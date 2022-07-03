@@ -8,6 +8,7 @@ class Player {
     this.isHaveCrown = false,
   });
 
+  String nickName = "Nick Name";
   int playerTurn = 0;
   int goldenCoinCount = 0;
 

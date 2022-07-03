@@ -57,7 +57,7 @@ class _BattleFieldPageState
             );
           },
         ),
-        Drawer(
+        Card(
           child: MainPlayerFieldPage(),
         ),
       ],

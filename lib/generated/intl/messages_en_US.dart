@@ -20,6 +20,8 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en_US';
 
+  static String m0(coinsCount) => "x ${coinsCount}";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "appName": MessageLookupByLibrary.simpleMessage("FlutterAuth"),
@@ -38,6 +40,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Follow system theme"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot password"),
+        "getCards": MessageLookupByLibrary.simpleMessage("Get cards"),
+        "getCoins": MessageLookupByLibrary.simpleMessage("Get coins"),
         "languagePref": MessageLookupByLibrary.simpleMessage("Language"),
         "logOut": MessageLookupByLibrary.simpleMessage("Log out"),
         "networkError": MessageLookupByLibrary.simpleMessage("Network error"),
@@ -48,6 +52,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "passwordIsEmpty": MessageLookupByLibrary.simpleMessage(
             "Password is not allowed to be empty"),
+        "playerCoins": m0,
         "psDigitAndLetters": MessageLookupByLibrary.simpleMessage(
             "Password should contain at least one letter and one digit"),
         "restorePassword":

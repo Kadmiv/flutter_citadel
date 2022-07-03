@@ -27,5 +27,8 @@
   "signUp": "Sign Up",
   "systemLanguage": "System language",
   "error": "Error",
-  "networkError": "Network error"
+  "networkError": "Network error",
+  "getCards": "Get cards",
+  "playerCoins": "x {coinsCount}",
+  "getCoins": "Get coins"
 }
