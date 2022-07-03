@@ -1,0 +1,42 @@
+[
+  {
+    "type": "assassin",
+    "rank": 1,
+    "color": "white"
+  },
+  {
+    "type": "thief",
+    "rank": 2,
+    "color": "white"
+  },
+  {
+    "type": "magician",
+    "rank": 3,
+    "color": "white"
+  },
+  {
+    "type": "king",
+    "rank": 4,
+    "color": "yellow"
+  },
+  {
+    "type": "bishop",
+    "rank": 5,
+    "color": "blue"
+  },
+  {
+    "type": "merchant",
+    "rank": 6,
+    "color": "green"
+  },
+  {
+    "type": "architect",
+    "rank": 7,
+    "color": "white"
+  },
+  {
+    "type": "warlord",
+    "rank": 8,
+    "color": "red"
+  }
+]
