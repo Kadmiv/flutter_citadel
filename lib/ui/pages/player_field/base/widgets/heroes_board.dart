@@ -35,7 +35,7 @@ class HeroesBoard extends StatelessWidget {
         );
 
         return Padding(
-          padding: const EdgeInsets.all(4),
+          padding: const EdgeInsets.all(2),
           child: card,
         );
       },

@@ -18,38 +18,43 @@ class PlayerMainInfoBoard extends StatelessWidget {
 
     return Row(
       children: [
-        Flexible(
+        AspectRatio(
+          aspectRatio: 0.65 * player.heroesCards.length,
           child: HeroesBoard(
             heroes: player.heroesCards,
           ),
         ),
         AspectRatio(
           aspectRatio: 0.7,
-          child: Column(
-            children: [
-              Row(
-                children: [
-                  Flexible(
-                    flex: 3,
-                    child: Image.asset(
-                      Assets.iconsCoin,
+          child: Padding(
+            padding: const EdgeInsets.all(2),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Flexible(
+                      flex: 3,
+                      child: Image.asset(
+                        Assets.iconsCoin,
+                      ),
                     ),
-                  ),
-                  Flexible(
-                    flex: 6,
-                    child: AutoSizeText(
-                      tr.playerCoins(player.goldenCoinCount),
-                      // style:  TextStyle(fontSize: 30),
-                      minFontSize: 4,
-                      maxFontSize: 30,
-                      maxLines: 1,
+                    Flexible(
+                      flex: 6,
+                      child: AutoSizeText(
+                        tr.playerCoins(player.goldenCoinCount),
+                        // style:  TextStyle(fontSize: 30),
+                        minFontSize: 4,
+                        maxFontSize: 30,
+                        maxLines: 1,
+                      ),
                     ),
-                  ),
-                ],
-              ),
-            ],
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
+        Expanded(child: Container()),
         Padding(
           padding: const EdgeInsets.all(4),
           child: AspectRatio(
