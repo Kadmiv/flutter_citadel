@@ -107,6 +107,7 @@ flutter:
 
   assets:
     - assets/
+    - assets/icons/
     - assets/data/
     - assets/data/classic/
     - assets/data/classic/districts/

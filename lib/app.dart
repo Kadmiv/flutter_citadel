@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_citadel/generated/l10n.dart';
-import 'package:flutter_citadel/ui/pages/base_page.dart';
 import 'package:flutter_citadel/ui/pages/battle_field_page/battle_field_page.dart';
-import 'package:flutter_citadel/ui/pages/player_field/main_player_field/main_player_field_page.dart';
-import 'package:flutter_citadel/ui/pages/player_field/widgets/created_districts_board.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 

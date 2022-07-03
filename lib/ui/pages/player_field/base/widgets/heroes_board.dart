@@ -3,7 +3,10 @@ import 'package:flutter_citadel/repository/models/hero_card.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 class HeroesBoard extends StatelessWidget {
-  const HeroesBoard({super.key, required this.heroes});
+  const HeroesBoard({
+    required this.heroes,
+    super.key,
+  });
 
   final List<HeroCard> heroes;
 
@@ -13,9 +16,9 @@ class HeroesBoard extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       itemCount: heroes.length,
       itemBuilder: (context, index) {
-        var districtCard = heroes[index];
+        final heroCard = heroes[index];
 
-        var card = Neumorphic(
+        final card = Neumorphic(
           style: NeumorphicStyle(
             shape: NeumorphicShape.concave,
             boxShape: NeumorphicBoxShape.roundRect(
@@ -27,7 +30,7 @@ class HeroesBoard extends StatelessWidget {
           ),
           child: Center(
             child: Image.asset(
-                'assets/data/classic/heroes/${districtCard.type.name}.png'),
+                'assets/data/classic/heroes/${heroCard.type.name}.png'),
           ),
         );
 

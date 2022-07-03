@@ -6,13 +6,14 @@ import 'package:flutter_citadel/repository/models/hero_card.dart';
 import 'package:flutter_citadel/repository/models/player.dart';
 import 'package:flutter_citadel/ui/pages/base/base_view_model.dart';
 
-class AnotherPlayerFieldViewModel extends IAnotherPlayerFieldViewModel {
-
-  AnotherPlayerFieldViewModel() {
+class MainPlayerFieldViewModel extends IMainPlayerFieldViewModel {
+  MainPlayerFieldViewModel() {
     createdDistrictsController = createController();
     districtsController = createController();
     heroesController = createController();
+    playerController = createController();
   }
+
   //
 
   final IGameRepository _gameRepository = GameRepository();
@@ -20,18 +21,27 @@ class AnotherPlayerFieldViewModel extends IAnotherPlayerFieldViewModel {
 
   @override
   Future<void> loadData() async {
-    player = await _gameRepository.getCurrentPlayer();
-    createdDistrictsController.sink.add(player.createdDistricts);
-    districtsController.sink.add(player.districts);
-    heroesController.sink.add(player.heroesCards);
+    _gameRepository.currentPlayerSubject.listen((value) {
+      player = value;
+      createdDistrictsController.sink.add(player.createdDistricts);
+      districtsController.sink.add(player.districts);
+      heroesController.sink.add(player.heroesCards);
+      playerController.sink.add(player);
+    });
   }
 }
 
-abstract class IAnotherPlayerFieldViewModel extends MainViewModel {
+abstract class IMainPlayerFieldViewModel extends IPlayerFieldViewModel {
+  //
+
+  void loadData();
+}
+
+abstract class IPlayerFieldViewModel extends MainViewModel {
   //
   late StreamController<List<DistrictCard>> createdDistrictsController;
   late StreamController<List<DistrictCard>> districtsController;
   late StreamController<List<HeroCard>> heroesController;
+  late StreamController<Player> playerController;
 
-  void loadData();
 }
