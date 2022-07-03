@@ -1,6 +1,7 @@
 import 'package:flutter_citadel/repository/models/hero_card.dart';
+import 'package:flutter_citadel/repository/services/shuffler.dart';
 
-class GamePreparer implements IGamePreparer {
+class GamePreparer with Shuffler implements IGamePreparer  {
   @override
   List<HeroCard> heroesCards = [];
 

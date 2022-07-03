@@ -29,3 +29,14 @@ enum BuildingType {
   university,
   watchtower;
 }
+
+
+BuildingType getBuildingTypeByName(String name) {
+  for (final color in BuildingType.values) {
+    if (color.name == name) {
+      return color;
+    }
+  }
+
+  return BuildingType.none;
+}
