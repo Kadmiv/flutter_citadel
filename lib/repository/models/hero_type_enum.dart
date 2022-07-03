@@ -1,15 +1,14 @@
 enum HeroType {
-  //todo - kadmiv - поменять порядок как на совновной карте
-  none,
-  architect,
   assassin,
-  bishop,
-  king,
-  magician,
-  merchant,
   thief,
+  magician,
+  king,
+  bishop,
+  merchant,
+  architect,
   warlord;
 }
+
 
 
 HeroType getHeroTypeByName(String name) {
