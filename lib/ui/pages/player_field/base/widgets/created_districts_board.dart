@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_citadel/generated/assets.dart';
 import 'package:flutter_citadel/repository/models/district_card.dart';
-import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 class CreatedDistrictsBoard extends StatelessWidget {
   const CreatedDistrictsBoard({required this.districts, super.key});
@@ -17,31 +15,16 @@ class CreatedDistrictsBoard extends StatelessWidget {
       children: List.generate(
         8,
         (index) {
-          var card = Neumorphic(
-            style: NeumorphicStyle(
-              shape: NeumorphicShape.concave,
-              boxShape: NeumorphicBoxShape.roundRect(
-                BorderRadius.circular(8),
-              ),
-              depth: -8,
-              lightSource: LightSource.topLeft,
-              color: Colors.grey,
-            ),
+          var card =  Card(
+            color: Colors.grey.shade400,
+            child: const SizedBox(),
           );
 
           if (index < districts.length) {
             var districtCard = districts[index];
 
-            card = Neumorphic(
-              style: NeumorphicStyle(
-                shape: NeumorphicShape.concave,
-                boxShape: NeumorphicBoxShape.roundRect(
-                  BorderRadius.circular(8),
-                ),
-                depth: -8,
-                lightSource: LightSource.topLeft,
-                color: Colors.grey,
-              ),
+            card = Card(
+              color: Colors.grey.shade400,
               child: Center(
                 child: Image.asset(
                     'assets/data/classic/districts/${districtCard.type.name}.png'),

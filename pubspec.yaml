@@ -4,99 +4,82 @@ description: A new Flutter project.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.17.3 <3.0.0"
+  sdk: ">=3.1.0 <4.0.0"
+  flutter: ">=3.7.0"
 
 
 dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.2
+  cupertino_icons: 1.0.6
 
   # Localization
   flutter_localizations:
     sdk: flutter
+
   # BSD
-  intl: 0.17.0
+  intl: 0.18.1
 
   # Network
   # MIT
-  dio: 4.0.6
-  # MIT
-  pretty_dio_logger: 1.2.0-beta-1
-  # MIT
-  worker_manager: 4.2.6
-  # MIT
-  isolated_worker: 0.1.0
-  # BSD
-  connectivity_plus: 2.3.0
+  dio: 5.4.0
 
   # Local storage
   # Apache 2.0
   hive_flutter: 1.1.0
   # BSD-2-Clause
-  flutter_secure_storage: 5.0.2
+  flutter_secure_storage: 9.0.0
 
   # UI
   # MIT
-  flutter_svg: 1.0.3
+  flutter_svg: 2.0.9
   # MIT
-  dotted_border: ^2.0.0+2
+  dotted_border: 2.1.0
   # MIT
   step_progress_indicator: 1.0.2
   # MIT
-  flutter_neumorphic: ^3.2.0
+  flutter_staggered_grid_view: 0.7.0
   # MIT
-  flutter_staggered_grid_view: ^0.6.1
+  multi_split_view: 2.4.0
   # MIT
-  multi_split_view: ^2.1.0
-  # MIT
-  flutter_chat_ui: ^1.6.3
+  flutter_chat_ui: 1.6.12
 
-  uuid: ^3.0.6
+  uuid: 4.2.2
 
-  # Firebase
-  firebase_core: 1.14.1
+#  # Firebase
+#  firebase_core: 2.25.4
+#  # BSD
+#  # todo starter: FCM background messages on iOS need additional setup with apple developer account
+#  firebase_messaging: 14.7.8
+#  # BSD
+#  firebase_crashlytics: 3.4.8
+#  # BSD
+#  firebase_analytics: 10.8.5
   # BSD
-  # todo starter: FCM background messages on iOS need additional setup with apple developer account
-  firebase_messaging: 11.2.13
-  # BSD
-  firebase_crashlytics: 2.6.2
-  # BSD
-  firebase_analytics: 9.1.5
-  # BSD
-  flutter_local_notifications: 9.4.0
+  flutter_local_notifications: 16.3.2
 
   # Other
   # BSD
-  share_plus: 4.0.4
+  share_plus: 7.2.2
   # BSD
   package_info: 2.0.2
   # BSD
-  rxdart: ^0.27.4
+  rxdart: 0.27.7
   # BSD
-  synchronized: 3.0.0+2
+  synchronized: 3.1.0+1
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^2.0.0
+#  flutter_test:
+#    sdk: flutter
+  flutter_lints: 3.0.1
   # Apache 2.0
-  hive_generator: 1.1.2
+  hive_generator: 2.0.1
   # BSD
-  build_runner: 2.1.9
-  # MIT
-  dart_code_metrics: 4.14.0
-  #BSD-3-Clause
-  golden_toolkit: 0.13.0
-  # MIT
-  mocktail: 0.3.0
-
-  # MIT
-  device_preview: 1.0.0
+  build_runner: 2.4.8
   # Extensions
   # Apache 2.0
-  dartx: 1.1.0
+  dartx: 1.2.0
 
 flutter_intl:
   enabled: true

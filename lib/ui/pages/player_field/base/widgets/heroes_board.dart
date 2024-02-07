@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_citadel/repository/models/hero_card.dart';
-import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 class HeroesBoard extends StatelessWidget {
   const HeroesBoard({
@@ -18,16 +17,8 @@ class HeroesBoard extends StatelessWidget {
       itemBuilder: (context, index) {
         final heroCard = heroes[index];
 
-        final card = Neumorphic(
-          style: NeumorphicStyle(
-            shape: NeumorphicShape.concave,
-            boxShape: NeumorphicBoxShape.roundRect(
-              BorderRadius.circular(8),
-            ),
-            depth: -8,
-            lightSource: LightSource.topLeft,
-            color: Colors.grey,
-          ),
+        final card = Card(
+          color: Colors.grey.shade400,
           child: Center(
             child: Image.asset(
                 'assets/data/classic/heroes/${heroCard.type.name}.png'),
